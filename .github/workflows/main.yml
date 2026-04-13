@@ -23,7 +23,7 @@ jobs:
           key: ${{ secrets.EC2_KEY }}
           script: |
             set -e
-            sudo yum install -y git maven java-17-amazon-corretto  true
+            sudo yum install -y git maven java-17-amazon-corretto -y
 
       # 3️⃣ Clone or pull repo on EC2
       - name: Clone / Pull Repository
